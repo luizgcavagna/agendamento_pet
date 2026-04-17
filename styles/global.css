@@ -28,4 +28,16 @@
   --accent-yellow-light: #756E1B;
   --accent-orange: #F09102;
   --accent-orange-light: #75501B;
+
+  /* Font */
+  --ff-inter-tight: "Inter Tight", sans-serif;
+  --title: 700 1.5rem/2rem var(--ff-inter-tight);
+
+  --ff-inter: "Inter", sans-serif;
+  --paragraph-medium: 500 0.875rem/1.5rem var(--ff-inter);
+  --paragraph-small: 500 0.75rem/1rem var(--ff-inter);
+  --label-large: 700 1rem/1.5rem var(--ff-inter);
+  --label-medium: 700 0.875rem/1.5rem var(--ff-inter);
+  --label-small: 700 0.75rem/1rem var(--ff-inter);
+  --link: 500 0.75rem/1rem var(--ff-inter);
 }
