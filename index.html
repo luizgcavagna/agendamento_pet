@@ -12,6 +12,126 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="header">
+    <img src="assets/mundo_pet.svg" alt="Logo">
+  </div>
+  <main>
+    <section class="date">
+      <div>
+        <h1>Sua agenda</h1>
+        <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+      </div>
+      <input type="date" name="date" id="date">
+    </section>
+
+    <section class="list morning">
+      <header>
+        <div class="period">
+          <img src="assets/icons/sun-fog.svg" alt="Manhã">
+          <h2>Manhã</h2>
+        </div>
+        <div class="hour">
+          <p>09h-12h</p>
+        </div>
+      </header>
+      <ul id="morning">
+        <li>
+          <div>
+            <strong>09:00</strong> 
+            <strong>Thor</strong> 
+            <span>/ Fernanda Costa</span>
+          </div>
+          <div>
+            <span>Vacinação</span>
+          </div>
+          <div>
+            <button>Remover agendamento</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="list afternoon">
+      <header>
+        <div class="period">
+          <img src="assets/icons/cloud-sun.svg" alt="Tarde">
+          <h2>Tarde</h2>
+        </div>
+        <div class="hour">
+          <p>13h-18h</p>
+        </div>
+      </header>
+      <ul id="afternoon">
+        <li>
+          <div>
+            <strong>13:00</strong> 
+            <strong>Mel</strong> 
+            <span>/ João Souza</span>
+          </div>
+          <div>
+            <span>Corte de Unhas</span>
+          </div>
+          <div>
+            <button>Remover agendamento</button>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>14:00</strong> 
+            <strong>Bella</strong> 
+            <span>/ Pedro Martins</span>
+          </div>
+          <div>
+            <span>Aplicação de Anti-pulgas</span>
+          </div>
+          <div>
+            <button>Remover agendamento</button>
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>15:00</strong> 
+            <strong>Simba</strong> 
+            <span>/ Juliana Rocha</span>
+          </div>
+          <div>
+            <span>Tosa Higiênica</span>
+          </div>
+          <div>
+            <button>Remover agendamento</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="list night">
+      <header>
+        <div class="period">
+          <img src="assets/icons/moon-stars.svg" alt="Noite">
+          <h2>Noite</h2>
+        </div>
+        <div class="hour">
+          <p>19h-21h</p>
+        </div>
+      </header>
+      <ul id="night">
+        <li>
+          <div>
+            <strong>20:00</strong> 
+            <strong>Max</strong> 
+            <span>/ Camila Santos</span>
+          </div>
+          <div>
+            <span>Limpeza de Dentes</span>
+          </div>
+          <div>
+            <button>Remover agendamento</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+    <button>Novo Agendamento</button>
+  </main>
 </body>
 </html>
