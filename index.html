@@ -132,6 +132,58 @@
     </section>
     
     <button>Novo Agendamento</button>
+
+    <div class="modal">
+      <div class="content">
+        <h2>Agende um atendimento</h2>
+        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+        <form>
+          <div class="input-wrapper">
+            <label for="name">Nome do tutor</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input-wrapper">
+            <label for="name-pet">Nome do pet</label>
+            <input type="text" name="name-pet" id="name-pet">
+          </div>
+          <div class="input-wrapper">
+            <label for="phone">Telefone</label>
+            <input type="text" name="phone" id="phone">
+          </div>
+          <div class="textarea-wrapper">
+            <label for="description">Descrição do serviço</label>
+            <textarea name="description" id="description"></textarea>
+          </div>
+            <div>
+              <div class="input-wrapper">
+              <label for="date-schedule">Data</label>
+              <input type="date" name="date-schedule" id="date-schedule">
+            </div>
+            <div class="select-wrapper">
+              <label for="hour">Hora</label>
+              <select name="hour" id="hour">
+                <option value="09">09:00</option>
+                <option value="10">10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
+                <option value="13">13:00</option>
+                <option value="14">14:00</option>
+                <option value="15">15:00</option>
+                <option value="16">16:00</option>
+                <option value="17">17:00</option>
+                <option value="18">18:00</option>
+                <option value="19">19:00</option>
+                <option value="20">20:00</option>
+                <option value="21">21:00</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <button>Agendar</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </main>
 </body>
 </html>
