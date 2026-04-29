@@ -10,7 +10,12 @@
   --content-secondary: #98959D;
   --content-tertiary: #666666;
   --content-brand: #9282FA;
+  --content-title: #F5F4F5;
+
+  --gray-300: #98959D;
+
   /* Background */
+  --background: #14151d;
   --background-primary: #151515;
   --background-secondary: #1E1E1E;
   --background-tertiary: #23242C;
@@ -40,4 +45,52 @@
   --label-medium: 700 0.875rem/1.5rem var(--ff-inter);
   --label-small: 700 0.75rem/1rem var(--ff-inter);
   --link: 500 0.75rem/1rem var(--ff-inter);
+  --input: 500 1rem/1.5 var(--ff-inter);
+}
+
+.display-none {
+  display: none;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--content-primary);
+}
+main {
+  padding: 1.25rem 1.25rem;
+}
+section.date {
+  & div {
+    & h1 {
+      font: var(--title);
+      margin-bottom: .25rem;
+      color: var(--content-title);
+    }
+
+    & p {
+      font: var(--paragraph-medium);
+      color: var(--gray-300);
+      margin-bottom: .75rem;
+    }
+  }
+
+  & input {
+    font: var(--input);
+    color: var(--content-secondary);
+    background: transparent;
+    padding: 0.75rem 1rem;
+    border: 1px solid --border-primary;
+    border-radius: 8px;
+  }
+
+  & ::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background: url("../assets/icons/arrow-down.svg") no-repeat;
+    background-position: right center; 
+  }
+}
+@media (width > 750px) {
+  main {
+    padding: 0.875rem 0 0;
+  }
 }
