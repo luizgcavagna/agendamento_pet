@@ -78,9 +78,20 @@ section.date {
     font: var(--input);
     color: var(--content-secondary);
     background: transparent;
-    padding: 0.75rem 1rem;
-    border: 1px solid --border-primary;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid var(--border-primary);
     border-radius: 8px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      background: url("../assets/icons/calendar.svg");
+    }
   }
 
   & ::-webkit-calendar-picker-indicator {
