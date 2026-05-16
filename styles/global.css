@@ -60,6 +60,8 @@ main {
   padding: 1.25rem 1.25rem;
 }
 section.date {
+  margin-bottom: 2rem;
+
   & div {
     & h1 {
       font: var(--title);
@@ -82,6 +84,7 @@ section.date {
     border: 1px solid var(--border-primary);
     border-radius: 8px;
     position: relative;
+    height: 3rem;
 
     &::before {
       content: '';
@@ -103,5 +106,110 @@ section.date {
 @media (width > 750px) {
   main {
     padding: 0.875rem 0 0;
+    width: 711px;
+    margin: 0 auto;
+  }
+
+  section.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+section.list {
+  background-color: #23243c;
+  margin-bottom: .75rem;
+  border-radius: 10px;
+
+  & header {
+    border-bottom: 2px solid #2e2c30;
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1.25rem;
+
+    & .period {
+      display: flex;
+
+      & h2 {
+        font: var(--label-large);
+        color: var(--content-primary);
+      }
+    }
+
+    & .hour {
+      & p {
+        font: var(--label-large);
+        color: var(--content-secondary);
+      }
+    }
+  }
+
+  & ul {
+    list-style: none;
+    padding: 1.25rem;
+
+    & li {
+      & div {
+        & strong {
+          font: var(--label-medium);
+          color: var(--content-primary);
+        }
+        & strong + strong {
+          margin-left: 0.75rem;
+        }
+        & span {
+          font: var(--paragraph-medium);
+          color: var(--content-secondary);
+        }
+      }
+
+      & div:nth-child(1){
+        padding-top: .75rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
+      }
+      & div:nth-child(2){
+        padding-left: .75rem;
+        padding-right: .75rem;
+        padding-bottom: .5rem;
+      }
+      & div:nth-child(3){
+        padding-left: .75rem;
+        padding-right: .75rem;
+        padding-bottom: .75rem;
+        display: flex;
+        justify-content: end;
+
+        & button {
+          background-color: transparent;
+          border: none;
+          font: var(--paragraph-small);
+          color: var(--content-tertiary);
+        }
+      }
+    }
+
+    & li + li {
+      border-top: 2px solid #2e2c30;
+    }
+  }
+}
+
+@media (width > 750px) {
+  section.list {
+    & ul {
+      & li {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+        align-items: center;
+        justify-content: center;
+        
+        & div {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
   }
 }
