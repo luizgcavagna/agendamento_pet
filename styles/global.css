@@ -216,3 +216,17 @@ section.list {
     }
   }
 }
+
+.new {
+  height: 3rem;
+  width: 13.625rem;
+  margin: 3.875rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--label-large);
+  color: #050505;
+  background-color: var(--content-brand);
+  border-radius: 8px;
+  cursor: pointer;
+}
